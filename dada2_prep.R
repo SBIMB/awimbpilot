@@ -139,10 +139,9 @@ summary_tab <- data.frame(row.names=samples, dada2_input=filtered_out[,1],
 save.image("rev_opt_pool_orig.RData")
 
 ##Assigning taxonomy
-library(DECIPHER)
 
 ## creating DNAStringSet object of our ASVs
-dna <- DNAStringSet(getSequences(seqtab.nochim))
+##dna <- DNAStringSet(getSequences(seqtab.nochim))
 
 ## and classifying
 
